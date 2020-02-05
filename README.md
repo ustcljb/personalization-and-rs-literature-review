@@ -12,7 +12,10 @@ This is a series literature review of personalization and recommendation systems
    <img src="https://render.githubusercontent.com/render/math?math=f(q, u, d) = ||W_{u,1}v_{q} %2B v_{u}  %2B W_{u,2}v_{d}||_{l_2}">
    </p>
    
-   - Next we train the model by minimize the total marginal value for the same user <img src="https://render.githubusercontent.com/render/math?math=\sum{max(0, \gamma %2B f(q, u, d) - f(q', u, d'))}"> where sum is taken for all relevant triples *(q, u, d)* and all irrelevant triples *(q', u, d')*.
+   - Next we train the model by minimize the total marginal value for the same user 
+   <p align="center">
+   <img src="https://render.githubusercontent.com/render/math?math=\sum{max(0, \gamma %2B f(q, u, d) - f(q', u, d'))}">
+   </p> where sum is taken for all relevant triples *(q, u, d)* and all irrelevant triples *(q', u, d')*.
 
 # Recommendation
 
