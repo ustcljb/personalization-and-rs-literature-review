@@ -6,7 +6,7 @@ This is a series literature review of personalization and recommendation systems
 ## Embedding
 - Search Personalization with Embeddings, 2016 (https://arxiv.org/pdf/1612.03597.pdf)
    - Previous search personalization highly depends on user profile (like human generated ontology), and this paper proposes a novel embedding method to track the user's topical interest.
-   - Each user is represented by two matrices $W_{u,1}$ and 
+   - Each user is represented by two matrices $`W_{u,1}`$ and 
 
 
 # Recommendation
