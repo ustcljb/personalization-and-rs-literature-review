@@ -23,7 +23,7 @@ This is a series literature review of personalization and recommendation systems
    - Two types of embeddings will be learned and served as rerank features: short-term (in-session) and long-term
    - In-session listing embeddings: In each session, user clicked listing *s = (l1, l2, ..., lM)* will be treated as a context and listing embedding will be learned using the skip-gram model as in *word2vec*. However, the following parts are different:
       - Each context can be break down into two categories based on whether the last clicks is converted to a booking: If yes, then the booked listing will also be treated as one neighbor of the central listing
-      - ![figure 1](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/skip-gram%20model%20for%20listing%20embedding.png)
+       ![figure 1](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/skip-gram%20model%20for%20listing%20embedding.png)
       - In the negtive sampling part, since most negative sampling will come from different market, this imbalance will lead to learning sub-optimal within-market similarities. To solve this problem, another randomly selected negative samples from the same market will be added to the loss function.
    - Cold start listing embeddings: To create embeddings for new listings, it calculates the mean vector using 3 embeddings of geographically closed listings that have embeddings and have same listing types.
    - Long-term embeddings: user-type embeddings and list-type embeddings.
