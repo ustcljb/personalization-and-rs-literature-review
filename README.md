@@ -19,8 +19,7 @@ This is a series literature review of personalization and recommendation systems
       - **cos_distance_last**: cosine distance to the last clicked item
       - **price_ratio_mean**: ratio of the price of the current item to the average price of previously clicked items
       - **title_jaccard_sim**: Jaccard similarity of the title of the current item to the last clicked item
-    
-    
+<br/>   
      
 - **[Real-time Personalization using Embeddings for Search Ranking at Airbnb](https://astro.temple.edu/~tua95067/kdd2018.pdf)**, 2018 
    - Two types of embeddings will be learned and served as rerank features: short-term (in-session) and long-term
@@ -33,8 +32,7 @@ This is a series literature review of personalization and recommendation systems
       - Different user/listing types will be generated based on different rules
       - Each context is consists of user_type followed by list_type and is ordered in time. We learn each user_type/list_type in the same space using the skip-gram model
    - For the learning part, several user short-term history sets that hold user actions from last 2 weeks will be updated in real-time such as **clicked listing_ids**, **long-clicked listing_ids**(longer than 60 sec), **skipped listing_ids**, **booked listing_ids**. Then different similarity based features will be calculated for each retrieved item. These features will be incorporated, together with other non-personalized features, into learning to rank procedure.
-
-
+<br/>
 
 ## Collaborative Filtering
 
@@ -51,6 +49,16 @@ This is a series literature review of personalization and recommendation systems
       - geographical features (personalized ones)
       - social features like common friends, companies and schools(personalized ones)
    - They use **coordinate ascent algorithm** to optimize NDCG at training step.
+<br/>
 
 # Recommendation
+
+- **[DRN: A Deep Reinforcement Learning Framework for News Recommendation](http://www.personal.psu.edu/~gjz5038/paper/www2018_reinforceRec/www2018_reinforceRec.pdf)**, 2018
+   - There are three challenges in news recommendation:
+      - The dynamic change is difficult to handle, which is in two-fold: The news get outdated fast and the user interest might evolve over time
+      - Current methods only consider immediate rewards like clicks/no-clicks. Long term ones like user return rate is not considered
+      - Current methods tend to recommending similar items to users, which might get users bored.
+   - Some rl recommendation methods proposed to solve the third challenge, but they usually use *\epsilon-greedy* or *Upper Condidence Bound(UCB)* to implement exploration step, which will harm user experience.
+   - Novelty: The authors propose Deep Q-learning based recommendation framework, which can not only model not only immediate reward but also future reward. In addition, the authors propose *Dueling Bandit Gradient Descent(DBGD)* method for exploration which chooses random items from the neighborhood of the current recommender.
+   - During training, the **state** is represented by the context features and user features, while the **action** is represented by the news features and user-news features. In addition, the Q-function is divided into two parts: The value function V(s) and the advantage function A(s, a). The former is determind by only the state, while the latter is determined by both.
 
