@@ -31,5 +31,22 @@ This is a series literature review of personalization and recommendation systems
       - Each context is consists of user_type followed by list_type and is ordered in time. We learn each user_type/list_type in the same space using the skip-gram model
    - For the learning part, several user short-term history sets that hold user actions from last 2 weeks will be updated in real-time such as **clicked listing_ids**, **long-clicked listing_ids**(longer than 60 sec), **skipped listing_ids**, **booked listing_ids**. Then different similarity based features will be calculated for each retrieved item. These features will be incorporated, together with other non-personalized features, into learning to rank procedure.
 
+
+## Collaborative Filtering
+
+- **[Personalized Expertise Search at LinkedIn](https://arxiv.org/pdf/1602.04572.pdf)**, 2016 
+   - Main Methodology: The authors introduce a collaborative filtering method based on matrix factorization in the offline phase. In online phase, a ranking approach is implemented using these expertise scores as features together with other features. The feature set contains personalized (location, social connection distance) as well as non-personalized (text matching) features.
+   - Novelty: The method is scalable in terms of 350 million members on about 40 thousand skills. In addtion, the collaborative filtering technique is able to infer expertise scores that the members do not even list. The authors also find a way to handle *position bias* and *sample selection bias*.
+   - The expertise score computing consists of the following three steps:
+      - a supervised learning step to compute *p(expert|q, member)* which outputs an initial, sparse, expertise matrix Ei, of dimensions m × s
+      - a matrix factorization step that factorizes Ei into latent factor matrices, Mk and Sk of dimensions m × k and s × k respectively
+      - the final score is the inner product of user and skills. For multi-skill search, it is a linear combination of each skill score. Thus all these can be precomputed offline.
+   -  During ranking step, the following features will be used:
+      - expertise scores as explained above
+      - textual features
+      - geographical features (personalized ones)
+      - social features like common friends, companies and schools(personalized ones)
+   - They use **coordinate ascent algorithm** to optimize NDCG at training step.
+
 # Recommendation
 
