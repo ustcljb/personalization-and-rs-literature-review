@@ -53,6 +53,9 @@ This is a series literature review of personalization and recommendation systems
 
 # Recommendation
 
+- **[Deep Learning based Recommender System: A Survey and New Perspectives](https://arxiv.org/pdf/1707.07435.pdf)** is a good systematic survey.
+</br>
+
 - **[DRN: A Deep Reinforcement Learning Framework for News Recommendation](http://www.personal.psu.edu/~gjz5038/paper/www2018_reinforceRec/www2018_reinforceRec.pdf)**, 2018
    - There are three challenges in news recommendation:
       - The dynamic change is difficult to handle, which is in two-fold: The news get outdated fast and the user interest might evolve over time
@@ -61,4 +64,15 @@ This is a series literature review of personalization and recommendation systems
    - Some rl recommendation methods proposed to solve the third challenge, but they usually use *\epsilon-greedy* or *Upper Condidence Bound(UCB)* to implement exploration step, which will harm user experience.
    - Novelty: The authors propose Deep Q-learning based recommendation framework, which can not only model not only immediate reward but also future reward. In addition, the authors propose *Dueling Bandit Gradient Descent(DBGD)* method for exploration which chooses random items from the neighborhood of the current recommender.
    - During training, the **state** is represented by the context features and user features, while the **action** is represented by the news features and user-news features. In addition, the Q-function is divided into two parts: The value function V(s) and the advantage function A(s, a). The former is determind by only the state, while the latter is determined by both.
+</br>
+
+- **[Deep Learning Recommendation Model for Personalization and Recommendation Systems](https://arxiv.org/pdf/1906.00091.pdf)**, 2019
+   - Novelty: The authors develop a state-of-the-art deep learning recommendation model and provide its implementation in both PyTorch and Caffe2 frameworks. They also design a specialized parallelization scheme utilizing model parallelism on the embedding tables.
+   - Components of DLRM
+      - Embeddings: besides the usual meaning, the embedding can also represent a weighted combination of multiple items, which is convenient for mini-batch learning
+      - Matrix Factorization: user/item will be projected into the same latent factor space.
+      - Factorization Machine: it incorporates second-order interactions into a linear model.
+      - Multilayer Perceptrons
+      ![]()
+
 
