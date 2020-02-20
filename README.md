@@ -73,7 +73,7 @@ This is a series literature review of personalization and recommendation systems
       - Matrix Factorization: user/item will be projected into the same latent factor space.
       - Factorization Machine: it incorporates second-order interactions into a linear model.
       - Multilayer Perceptrons
-      <img src="./dlrm_fb.png" width="100" height="100">
+      <img src="./dlrm_fb.png" width="800" height="500">
    - Comparison with prior models: the authors argue that higher-order interaction beyond second-order found in other networks may not necessarily be worth the additional computational/memory cost.
    - Butterfly shuffle for the all-to-all communication
    ![butterfly shuffle](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/butterfly%20shuffle.png)
