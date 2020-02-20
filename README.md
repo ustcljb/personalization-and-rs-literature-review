@@ -77,5 +77,16 @@ This is a series literature review of personalization and recommendation systems
    - Comparison with prior models: the authors argue that higher-order interaction beyond second-order found in other networks may not necessarily be worth the additional computational/memory cost.
    - Butterfly shuffle for the all-to-all communication
    ![butterfly shuffle](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/butterfly%20shuffle.png)
+</br>
+
+- **[Neural Collaborative Filtering](https://arxiv.org/pdf/1708.05031.pdf)**, 2017
+
+- **[Top-K Off-Policy Correction for a REINFORCE Recommender System](https://arxiv.org/pdf/1812.02353.pdf)**, 2018
+
+- **[Deep Neural Networks for YouTube Recommendations](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45530.pdf)**, 2016
+
+- **[Wide & Deep Learning for Recommender Systems](https://arxiv.org/pdf/1606.07792.pdf)**, 2016
+
+- **[Embedding-based News Recommendation for Millions of Users](http://library.usc.edu.ph/ACM/KKD%202017/pdfs/p1933.pdf)**, 2017
 
 
