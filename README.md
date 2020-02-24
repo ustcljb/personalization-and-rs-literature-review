@@ -87,11 +87,12 @@ This is a series literature review of personalization and recommendation systems
 - **[Deep Neural Networks for YouTube Recommendations](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45530.pdf)**, 2016
 
 - **[Wide & Deep Learning for Recommender Systems](https://arxiv.org/pdf/1606.07792.pdf)**, 2016
+
    － Novelty: The authors jointly trained wide linear models and deep neural networks, which combines the benefits of memorization and generalization for recommender systems.
    - Model component:
       - The wide part: it is a linear combination of features. The feature set includes raw input features and transformed features(via cross-product transformation)
       - The deep part: The catogorical features firstly are converted into low-dimentional embedding feature. Then a multi-layer perceptron will be applied.
-      - ![wide and deep](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/wide_and_deep.png)
+       ![wide and deep](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/wide_and_deep.png)
 
 - **[Embedding-based News Recommendation for Millions of Users](http://library.usc.edu.ph/ACM/KKD%202017/pdfs/p1933.pdf)**, 2017
 
