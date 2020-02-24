@@ -82,9 +82,9 @@ This is a series literature review of personalization and recommendation systems
 - **[Neural Collaborative Filtering](https://arxiv.org/pdf/1708.05031.pdf)**, 2017
    － Novelty: Replacing the simple inner product user-item interaction in classical collaborative filtering with non-linear multi-layer perceptron(NCF, Neural Collaborative filtering). In such a setting, MF can be interpreted as a specialization of NCF.
    - General framework
-   ![NCF general framework]()
+   ![NCF general framework](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/NCF%20framework.png)
    - GMF(generalized matrix factorization) and MLP(Nulti-layer Perceptron) and their fusion: GMF takes advantage of linearity of latent features and MLP controls non-linearity. GMF and MLP will be pre-trained (embedding on different space) and then the joint model will be trained
-   ![Neural matrix factorization model]()
+   ![Neural matrix factorization model](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/Neural_matrix_factorization_model.png)
 
 - **[Top-K Off-Policy Correction for a REINFORCE Recommender System](https://arxiv.org/pdf/1812.02353.pdf)**, 2018
 
