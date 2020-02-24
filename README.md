@@ -25,7 +25,7 @@ This is a series literature review of personalization and recommendation systems
    - Two types of embeddings will be learned and served as rerank features: short-term (in-session) and long-term
    - In-session listing embeddings: In each session, user clicked listing *s = (l1, l2, ..., lM)* will be treated as a context and listing embedding will be learned using the skip-gram model as in *word2vec*. However, the following parts are different:
       - Each context can be break down into two categories based on whether the last clicks is converted to a booking: If yes, then the booked listing will also be treated as one neighbor of the central listing
-       ![figure 1](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/skip-gram%20model%20for%20listing%20embedding.png)
+       ![figure 1](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/images/skip-gram%20model%20for%20listing%20embedding.png)
       - In the negtive sampling part, since most negative sampling will come from different market, this imbalance will lead to learning sub-optimal within-market similarities. To solve this problem, another randomly selected negative samples from the same market will be added to the loss function.
    - Cold start listing embeddings: To create embeddings for new listings, it calculates the mean vector using 3 embeddings of geographically closed listings that have embeddings and have same listing types.
    - Long-term embeddings: user-type embeddings and list-type embeddings.
@@ -73,18 +73,18 @@ This is a series literature review of personalization and recommendation systems
       - Matrix Factorization: user/item will be projected into the same latent factor space.
       - Factorization Machine: it incorporates second-order interactions into a linear model.
       - Multilayer Perceptrons
-      <img src="./dlrm_fb.png" width="650" height="500">
+      <img src="./images/dlrm_fb.png" width="650" height="500">
    - Comparison with prior models: the authors argue that higher-order interaction beyond second-order found in other networks may not necessarily be worth the additional computational/memory cost.
    - Butterfly shuffle for the all-to-all communication
-   ![butterfly shuffle](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/butterfly%20shuffle.png)
+   ![butterfly shuffle](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/images/butterfly%20shuffle.png)
 </br>
 
 - **[Neural Collaborative Filtering](https://arxiv.org/pdf/1708.05031.pdf)**, 2017
    － Novelty: Replacing the simple inner product user-item interaction in classical collaborative filtering with non-linear multi-layer perceptron(NCF, Neural Collaborative filtering). In such a setting, MF can be interpreted as a specialization of NCF.
    - General framework
-   ![NCF general framework](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/NCF%20framework.png)
+   ![NCF general framework](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/images/NCF%20framework.png)
    - GMF(generalized matrix factorization) and MLP(Nulti-layer Perceptron) and their fusion: GMF takes advantage of linearity of latent features and MLP controls non-linearity. GMF and MLP will be pre-trained (embedding on different space) and then the joint model will be trained
-   ![Neural matrix factorization model](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/Neural_matrix_factorization_model.png)
+   ![Neural matrix factorization model](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/images/Neural_matrix_factorization_model.png)
 
 - **[Top-K Off-Policy Correction for a REINFORCE Recommender System](https://arxiv.org/pdf/1812.02353.pdf)**, 2018
 
@@ -96,7 +96,7 @@ This is a series literature review of personalization and recommendation systems
    - Model component:
       - The wide part: it is a linear combination of features. The feature set includes raw input features and transformed features(via cross-product transformation)
       - The deep part: The catogorical features firstly are converted into low-dimentional embedding feature. Then a multi-layer perceptron will be applied.
-       ![wide and deep](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/wide_and_deep.png)
+       ![wide and deep](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/images/wide_and_deep.png)
 
 - **[Embedding-based News Recommendation for Millions of Users](http://library.usc.edu.ph/ACM/KKD%202017/pdfs/p1933.pdf)**, 2017
 
