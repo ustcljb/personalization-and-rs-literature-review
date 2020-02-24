@@ -91,7 +91,7 @@ This is a series literature review of personalization and recommendation systems
    - Model component:
       - The wide part: it is a linear combination of features. The feature set includes raw input features and transformed features(via cross-product transformation)
       - The deep part: The catogorical features firstly are converted into low-dimentional embedding feature. Then a multi-layer perceptron will be applied.
-      - ![wide and deep]()
+      - ![wide and deep](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/wide_and_deep.png)
 
 - **[Embedding-based News Recommendation for Millions of Users](http://library.usc.edu.ph/ACM/KKD%202017/pdfs/p1933.pdf)**, 2017
 
