@@ -89,6 +89,15 @@ This is a series literature review of personalization and recommendation systems
 - **[Top-K Off-Policy Correction for a REINFORCE Recommender System](https://arxiv.org/pdf/1812.02353.pdf)**, 2018
 
 - **[Deep Neural Networks for YouTube Recommendations](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45530.pdf)**, 2016
+   - Novelty: 
+      - This paper applies deep neural network to both candidate generation model and ranking model
+      - The age of the training example serves as a feature during training to solve the "freshness" challenge
+      - The final ranking objective is based on live A/B testing results but is generally a simple function of expected watch time per impression
+   - Model structure:
+      - 1. deep candidate generation model
+      ![deep candidate generation model](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/images/deep_candidate_generation_model.png)
+      - 2. deep ranking model
+      ![deep ranking model](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/images/deep_ranking_network.png)
 
 - **[Wide & Deep Learning for Recommender Systems](https://arxiv.org/pdf/1606.07792.pdf)**, 2016
 
