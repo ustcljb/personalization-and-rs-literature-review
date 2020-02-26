@@ -85,6 +85,7 @@ This is a series literature review of personalization and recommendation systems
    ![NCF general framework](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/images/NCF%20framework.png)
    - GMF(generalized matrix factorization) and MLP(Nulti-layer Perceptron) and their fusion: GMF takes advantage of linearity of latent features and MLP controls non-linearity. GMF and MLP will be pre-trained (embedding on different space) and then the joint model will be trained
    ![Neural matrix factorization model](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/images/Neural_matrix_factorization_model.png)
+</br>
 
 - **[Top-K Off-Policy Correction for a REINFORCE Recommender System](https://arxiv.org/pdf/1812.02353.pdf)**, 2018
 
@@ -98,6 +99,7 @@ This is a series literature review of personalization and recommendation systems
       ![deep candidate generation model](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/images/deep_candidate_generation_model.png)
       - 2. deep ranking model
       ![deep ranking model](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/images/deep_ranking_network.png)
+</br>
 
 - **[Wide & Deep Learning for Recommender Systems](https://arxiv.org/pdf/1606.07792.pdf)**, 2016
 
@@ -106,7 +108,19 @@ This is a series literature review of personalization and recommendation systems
       - The wide part: it is a linear combination of features. The feature set includes raw input features and transformed features(via cross-product transformation)
       - The deep part: The catogorical features firstly are converted into low-dimentional embedding feature. Then a multi-layer perceptron will be applied.
        ![wide and deep](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/images/wide_and_deep.png)
+</br>
 
 - **[Embedding-based News Recommendation for Millions of Users](http://library.usc.edu.ph/ACM/KKD%202017/pdfs/p1933.pdf)**, 2017
+
+- **[Graph Convolutional Neural Networks forWeb-Scale Recommender Systems](https://arxiv.org/pdf/1806.01973.pdf)**, 2018
+   - Novelty: The authors develop a data efficient Graph Convolutional Network (GCN) algorithm: PinSage, which combines efficient random walks and graph convolutions to generate embeddings of nodes (i.e., items) that incorporate both graph structure as well as node feature information.
+   - Model structure:
+   ![PinSage](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/images/PinSage.png)
+   - Model innovations:
+      - The set of neighbors is selected using *importance sampling*: The neighborhood of a node *u* is defined as the *T* nodes that exert the most influence on node *u*.
+      - The PinSage is trained in a supervised fashion using a max-margin ranking loss.
+      - To improve efficiency when training with large batch sizes, the authors sample a set of 500 negative items to be shared by all training examples in each minibatch.
+      - "Hard" negative examples(that are somewhat related to the query item but not as related as the positive item) are added for each positive training example.
+      - Node embeddings via MapReduce which avoids redundant computations.
 
 
