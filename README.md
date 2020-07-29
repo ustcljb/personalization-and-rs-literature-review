@@ -57,9 +57,10 @@ This is a series literature review of personalization and recommendation systems
 </br>
 
 - **[On the Difficulty of Evaluating Baselines: A Study on Recommender Systems](https://arxiv.org/pdf/1905.01395.pdf)** is a very interesting paper. Although the papers/methods it included have nothing to do with deep learning, it is worthwhile to have a summary over all those classic methods.
-</br>
    - **[Bayesian MF](https://www.cs.toronto.edu/~amnih/papers/bpmf.pdf)**
+   
    - **[SVD++](https://www.cs.rochester.edu/twiki/pub/Main/HarpSeminar/Factorization_Meets_the_Neighborhood-_a_Multifaceted_Collaborative_Filtering_Model.pdf)**
+   
    - **[timeSVD++](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.379.1951&rep=rep1&type=pdf)**
 
 - **[DRN: A Deep Reinforcement Learning Framework for News Recommendation](http://www.personal.psu.edu/~gjz5038/paper/www2018_reinforceRec/www2018_reinforceRec.pdf)**, 2018
