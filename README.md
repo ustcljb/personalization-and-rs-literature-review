@@ -22,7 +22,6 @@ This is a series literature review of personalization and recommendation systems
 
 # Personalization
 
-## Embedding
 - **[Search Personalization with Embeddings](https://arxiv.org/pdf/1612.03597.pdf)**, 2016 
    - Previous search personalization highly depends on user profile (like human generated ontology), and this paper proposes a novel embedding method to track the user's topical interest.
    - Each user is represented by two matrices **W<sub>u,1</sub>** and **W<sub>u,2</sub>** to represent the relationship between user and query/document, and an additional vector *v<sub>u</sub>* to represent the user topical interests. On the other side, each query/document is represented by a vector *v<sub>q</sub>* and *v<sub>d</sub>* respectively which is pre-determined using the [LDA topic model](http://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf).
@@ -53,8 +52,6 @@ This is a series literature review of personalization and recommendation systems
    - For the learning part, several user short-term history sets that hold user actions from last 2 weeks will be updated in real-time such as **clicked listing_ids**, **long-clicked listing_ids**(longer than 60 sec), **skipped listing_ids**, **booked listing_ids**. Then different similarity based features will be calculated for each retrieved item. These features will be incorporated, together with other non-personalized features, into learning to rank procedure.
 <br/>
 
-## Collaborative Filtering
-
 - **[Personalized Expertise Search at LinkedIn](https://arxiv.org/pdf/1602.04572.pdf)**, 2016 
    - Main Methodology: The authors introduce a collaborative filtering method based on matrix factorization in the offline phase. In online phase, a ranking approach is implemented using these expertise scores as features together with other features. The feature set contains personalized (location, social connection distance) as well as non-personalized (text matching) features.
    - Novelty: The method is scalable in terms of 350 million members on about 40 thousand skills. In addtion, the collaborative filtering technique is able to infer expertise scores that the members do not even list. The authors also find a way to handle *position bias* and *sample selection bias*.
@@ -71,8 +68,6 @@ This is a series literature review of personalization and recommendation systems
 <br/>
 
 # Recommendation
-
-## Deep Learning Related
 
 - **[Deep Learning based Recommender System:A Survey and New Perspectives](https://arxiv.org/pdf/1707.07435.pdf)** is a good systematic survey.
 </br>
@@ -139,9 +134,6 @@ This is a series literature review of personalization and recommendation systems
       - "Hard" negative examples(that are somewhat related to the query item but not as related as the positive item) are added for each positive training example.
       - Node embeddings via MapReduce which avoids redundant computations.
 
-
-
-## Reinforcement Learning Related
 
 - Challenges in Applying RL for Recommender System (This is taken from the video [Reinforcement Learning for Recommender Systems: A Case Study on Youtube](https://www.youtube.com/watch?v=HEqQ2_1XRTs))
    - Large action space
