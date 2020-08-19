@@ -53,6 +53,8 @@ This is a series literature review of personalization and recommendation systems
 
 # Recommendation
 
+## Deep Learning Related
+
 - **[Deep Learning based Recommender System: A Survey and New Perspectives](https://arxiv.org/pdf/1707.07435.pdf)** is a good systematic survey.
 </br>
 
@@ -62,40 +64,7 @@ This is a series literature review of personalization and recommendation systems
    - **[SVD++](https://www.cs.rochester.edu/twiki/pub/Main/HarpSeminar/Factorization_Meets_the_Neighborhood-_a_Multifaceted_Collaborative_Filtering_Model.pdf)**
    
    - **[timeSVD++](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.379.1951&rep=rep1&type=pdf)**
-
-- **[DRN: A Deep Reinforcement Learning Framework for News Recommendation](http://www.personal.psu.edu/~gjz5038/paper/www2018_reinforceRec/www2018_reinforceRec.pdf)**, 2018
-   - There are three challenges in news recommendation:
-      - The dynamic change is difficult to handle, which is in two-fold: The news get outdated fast and the user interest might evolve over time
-      - Current methods only consider immediate rewards like clicks/no-clicks. Long term ones like user return rate is not considered
-      - Current methods tend to recommending similar items to users, which might get users bored.
-   - Some rl recommendation methods proposed to solve the third challenge, but they usually use *\epsilon-greedy* or *Upper Condidence Bound(UCB)* to implement exploration step, which will harm user experience.
-   - Novelty: The authors propose Deep Q-learning based recommendation framework, which can not only model not only immediate reward but also future reward. In addition, the authors propose *Dueling Bandit Gradient Descent(DBGD)* method for exploration which chooses random items from the neighborhood of the current recommender.
-   - During training, the **state** is represented by the context features and user features, while the **action** is represented by the news features and user-news features. In addition, the Q-function is divided into two parts: The value function V(s) and the advantage function A(s, a). The former is determind by only the state, while the latter is determined by both.
-</br>
-
-- **[Deep Learning Recommendation Model for Personalization and Recommendation Systems](https://arxiv.org/pdf/1906.00091.pdf)**, 2019
-   - Novelty: The authors develop a state-of-the-art deep learning recommendation model and provide its implementation in both PyTorch and Caffe2 frameworks. They also design a specialized parallelization scheme utilizing model parallelism on the embedding tables.
-   - Components of DLRM
-      - Embeddings: besides the usual meaning, the embedding can also represent a weighted combination of multiple items, which is convenient for mini-batch learning
-      - Matrix Factorization: user/item will be projected into the same latent factor space.
-      - Factorization Machine: it incorporates second-order interactions into a linear model.
-      - Multilayer Perceptrons
-      <img src="./images/dlrm_fb.png" width="650" height="500">
-   - Comparison with prior models: the authors argue that higher-order interaction beyond second-order found in other networks may not necessarily be worth the additional computational/memory cost.
-   - Butterfly shuffle for the all-to-all communication
-   ![butterfly shuffle](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/images/butterfly%20shuffle.png)
-</br>
-
-- **[Neural Collaborative Filtering](https://arxiv.org/pdf/1708.05031.pdf)**, 2017
-   － Novelty: Replacing the simple inner product user-item interaction in classical collaborative filtering with non-linear multi-layer perceptron(NCF, Neural Collaborative filtering). In such a setting, MF can be interpreted as a specialization of NCF.
-   - General framework
-   ![NCF general framework](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/images/NCF%20framework.png)
-   - GMF(generalized matrix factorization) and MLP(Nulti-layer Perceptron) and their fusion: GMF takes advantage of linearity of latent features and MLP controls non-linearity. GMF and MLP will be pre-trained (embedding on different space) and then the joint model will be trained
-   ![Neural matrix factorization model](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/images/Neural_matrix_factorization_model.png)
-</br>
-
-- **[Top-K Off-Policy Correction for a REINFORCE Recommender System](https://arxiv.org/pdf/1812.02353.pdf)**, 2018
-
+   
 - **[Deep Neural Networks for YouTube Recommendations](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45530.pdf)**, 2016
    - Novelty: 
       - This paper applies deep neural network to both candidate generation model and ranking model
@@ -119,6 +88,27 @@ This is a series literature review of personalization and recommendation systems
 
 - **[Embedding-based News Recommendation for Millions of Users](http://library.usc.edu.ph/ACM/KKD%202017/pdfs/p1933.pdf)**, 2017
 
+- **[Deep Learning Recommendation Model for Personalization and Recommendation Systems](https://arxiv.org/pdf/1906.00091.pdf)**, 2019
+   - Novelty: The authors develop a state-of-the-art deep learning recommendation model and provide its implementation in both PyTorch and Caffe2 frameworks. They also design a specialized parallelization scheme utilizing model parallelism on the embedding tables.
+   - Components of DLRM
+      - Embeddings: besides the usual meaning, the embedding can also represent a weighted combination of multiple items, which is convenient for mini-batch learning
+      - Matrix Factorization: user/item will be projected into the same latent factor space.
+      - Factorization Machine: it incorporates second-order interactions into a linear model.
+      - Multilayer Perceptrons
+      <img src="./images/dlrm_fb.png" width="650" height="500">
+   - Comparison with prior models: the authors argue that higher-order interaction beyond second-order found in other networks may not necessarily be worth the additional computational/memory cost.
+   - Butterfly shuffle for the all-to-all communication
+   ![butterfly shuffle](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/images/butterfly%20shuffle.png)
+</br>
+
+- **[Neural Collaborative Filtering](https://arxiv.org/pdf/1708.05031.pdf)**, 2017
+   － Novelty: Replacing the simple inner product user-item interaction in classical collaborative filtering with non-linear multi-layer perceptron(NCF, Neural Collaborative filtering). In such a setting, MF can be interpreted as a specialization of NCF.
+   - General framework
+   ![NCF general framework](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/images/NCF%20framework.png)
+   - GMF(generalized matrix factorization) and MLP(Nulti-layer Perceptron) and their fusion: GMF takes advantage of linearity of latent features and MLP controls non-linearity. GMF and MLP will be pre-trained (embedding on different space) and then the joint model will be trained
+   ![Neural matrix factorization model](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/images/Neural_matrix_factorization_model.png)
+</br>
+
 - **[Graph Convolutional Neural Networks forWeb-Scale Recommender Systems](https://arxiv.org/pdf/1806.01973.pdf)**, 2018
    - Novelty: The authors develop a data efficient Graph Convolutional Network (GCN) algorithm: PinSage, which combines efficient random walks and graph convolutions to generate embeddings of nodes (i.e., items) that incorporate both graph structure as well as node feature information.
    - Model structure:
@@ -129,5 +119,28 @@ This is a series literature review of personalization and recommendation systems
       - To improve efficiency when training with large batch sizes, the authors sample a set of 500 negative items to be shared by all training examples in each minibatch.
       - "Hard" negative examples(that are somewhat related to the query item but not as related as the positive item) are added for each positive training example.
       - Node embeddings via MapReduce which avoids redundant computations.
+
+
+
+## Reinforcement Learning related
+
+- Challenges in Applying RL for Recommender System (This is taken from the video [Reinforcement Learning for Recommender Systems: A Case Study on Youtube](https://www.youtube.com/watch?v=HEqQ2_1XRTs))
+   - Large action space
+   - Expensive exploration
+   - Learning off-policy
+   - Partial observation
+   - Noisy reward
+
+- **[DRN: A Deep Reinforcement Learning Framework for News Recommendation](http://www.personal.psu.edu/~gjz5038/paper/www2018_reinforceRec/www2018_reinforceRec.pdf)**, 2018
+   - There are three challenges in news recommendation:
+      - The dynamic change is difficult to handle, which is in two-fold: The news get outdated fast and the user interest might evolve over time
+      - Current methods only consider immediate rewards like clicks/no-clicks. Long term ones like user return rate is not considered
+      - Current methods tend to recommending similar items to users, which might get users bored.
+   - Some rl recommendation methods proposed to solve the third challenge, but they usually use *\epsilon-greedy* or *Upper Condidence Bound(UCB)* to implement exploration step, which will harm user experience.
+   - Novelty: The authors propose Deep Q-learning based recommendation framework, which can not only model not only immediate reward but also future reward. In addition, the authors propose *Dueling Bandit Gradient Descent(DBGD)* method for exploration which chooses random items from the neighborhood of the current recommender.
+   - During training, the **state** is represented by the context features and user features, while the **action** is represented by the news features and user-news features. In addition, the Q-function is divided into two parts: The value function V(s) and the advantage function A(s, a). The former is determind by only the state, while the latter is determined by both.
+</br>
+
+- **[Top-K Off-Policy Correction for a REINFORCE Recommender System](https://arxiv.org/pdf/1812.02353.pdf)**, 2018
 
 
