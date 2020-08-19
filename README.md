@@ -1,6 +1,29 @@
 # personalization-and-rs-literature-review
 This is a series literature review of personalization and recommendation systems. Though there is no clear boundary between personalization and recommendation, it is commonly to recognize the search with query involved as personalization like search engine, e-commerce search, while to treat those without query as recommendation like news and videos recommendation.
 
+- [Personalization](#personalization)
+ - [Embedding](#embedding)
+  - [Search Personalization with Embeddings](#Search_Personalization_with_Embeddings),2016
+  - [Personalized Ranking in eCommerce Search](#Personalized_Ranking_in_eCommerce_Search),2019
+  - [Real-time Personalization using Embeddings for Search Ranking at Airbnb](#Real-time_Personalization_using_Embeddings_for_Search_Ranking_at_Airbnb), 2018
+ - [Collaborative Filtering](#Collaborative_Filtering)
+  - [Personalized Expertise Search at LinkedIn](#Personalized_Expertise_Search_at_LinkedIn), 2016
+  
+- [Recommendation](#Recommendation)
+ - [Deep Learning Related](#Deep_Learning_Related)
+  - [Deep Learning based Recommender System: A Survey and New Perspectives](#Deep_Learning_based_Recommender_System:_A_Survey_and_New_Perspectives), 2017
+  - [On the Difficulty of Evaluating Baselines: A Study on Recommender Systems](#On_the_Difficulty_of_Evaluating_Baselines:_A_Study_on_Recommender_Systems), 2019
+  - [Deep Neural Networks for YouTube Recommendations](#Deep_Neural_Networks_for_YouTube_Recommendations), 2016
+  - [Wide & Deep Learning for Recommender Systems](#Wide_&_Deep_Learning_for_Recommender_Systems), 2016
+  - [Embedding-based News Recommendation for Millions of Users](#Embedding-based_News_Recommendation_for_Millions_of_Users), 2017
+  - [Deep Learning Recommendation Model for Personalization and Recommendation Systems](#Deep_Learning_Recommendation_Model_for_Personalization_and_Recommendation_Systems), 2019
+  - [Neural Collaborative Filtering](#Neural_Collaborative_Filtering), 2017
+  - [Graph Convolutional Neural Networks for Web-Scale Recommender Systems](#Graph_Convolutional_Neural_Networks_for_Web-Scale_Recommender_Systems), 2018
+ - [Reinforcement Learning Related](#Reinforcement_Learning_Related)
+  - [DRN: A Deep Reinforcement Learning Framework for News Recommendation](#DRN:_A_Deep_Reinforcement_Learning_Framework_for_News_Recommendation), 2018
+  - [Top-K Off-Policy Correction for a REINFORCE Recommender System](#Top-K_Off-Policy_Correction_for_a_REINFORCE_Recommender_System), 2018
+
+
 # Personalization
 
 ## Embedding
@@ -104,15 +127,15 @@ This is a series literature review of personalization and recommendation systems
 - **[Neural Collaborative Filtering](https://arxiv.org/pdf/1708.05031.pdf)**, 2017
    － Novelty: Replacing the simple inner product user-item interaction in classical collaborative filtering with non-linear multi-layer perceptron(NCF, Neural Collaborative filtering). In such a setting, MF can be interpreted as a specialization of NCF.
    - General framework
-   ![NCF general framework](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/images/NCF%20framework.png)
+   ![NCF general framework](https://github.com/ustcljb/personalization-and-rs-literature-review/blob/master/images/NCF%20framework.png)
    - GMF(generalized matrix factorization) and MLP(Nulti-layer Perceptron) and their fusion: GMF takes advantage of linearity of latent features and MLP controls non-linearity. GMF and MLP will be pre-trained (embedding on different space) and then the joint model will be trained
-   ![Neural matrix factorization model](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/images/Neural_matrix_factorization_model.png)
+   ![Neural matrix factorization model](https://github.com/ustcljb/personalization-and-rs-literature-review/blob/master/images/Neural_matrix_factorization_model.png)
 </br>
 
-- **[Graph Convolutional Neural Networks forWeb-Scale Recommender Systems](https://arxiv.org/pdf/1806.01973.pdf)**, 2018
+- **[Graph Convolutional Neural Networks for Web-Scale Recommender Systems](https://arxiv.org/pdf/1806.01973.pdf)**, 2018
    - Novelty: The authors develop a data efficient Graph Convolutional Network (GCN) algorithm: PinSage, which combines efficient random walks and graph convolutions to generate embeddings of nodes (i.e., items) that incorporate both graph structure as well as node feature information.
    - Model structure:
-   ![PinSage](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/images/PinSage.png)
+   ![PinSage](https://github.com/ustcljb/personalization-and-rs-literature-review/blob/master/images/PinSage.png)
    - Model innovations:
       - The set of neighbors is selected using *importance sampling*: The neighborhood of a node *u* is defined as the *T* nodes that exert the most influence on node *u*.
       - The PinSage is trained in a supervised fashion using a max-margin ranking loss.
@@ -122,7 +145,7 @@ This is a series literature review of personalization and recommendation systems
 
 
 
-## Reinforcement Learning related
+## Reinforcement Learning Related
 
 - Challenges in Applying RL for Recommender System (This is taken from the video [Reinforcement Learning for Recommender Systems: A Case Study on Youtube](https://www.youtube.com/watch?v=HEqQ2_1XRTs))
    - Large action space
