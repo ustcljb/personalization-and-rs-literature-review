@@ -70,7 +70,7 @@ This is a series literature review of personalization and recommendation systems
 # Recommendation
 
 - **[Deep Learning based Recommender System: A Survey and New Perspectives](https://arxiv.org/pdf/1707.07435.pdf)** is a good systematic survey.
-</br>
+
 - **[On the Difficulty of Evaluating Baselines: A Study on Recommender Systems](https://arxiv.org/pdf/1905.01395.pdf)** is a very interesting paper. Although the papers/methods it included have nothing to do with deep learning, it is worthwhile to have a summary over all those classic methods.
    - **[Bayesian MF](https://www.cs.toronto.edu/~amnih/papers/bpmf.pdf)**
    
