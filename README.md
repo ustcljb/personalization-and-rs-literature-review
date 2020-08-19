@@ -5,15 +5,15 @@ This is a series literature review of personalization and recommendation systems
 - [Personalized Ranking in eCommerce Search](#Personalized_Ranking_in_eCommerce_Search), 2019
 - [Real-time Personalization using Embeddings for Search Ranking at Airbnb](#Real-time_Personalization_using_Embeddings_for_Search_Ranking_at_Airbnb), 2018
 - [Personalized Expertise Search at LinkedIn](#Personalized_Expertise_Search_at_LinkedIn), 2016  
-- [Deep Learning based Recommender System: A Survey and New Perspectives](#Deep_Learning_based_Recommender_System:_A_Survey_and_New_Perspectives), 2017
-- [On the Difficulty of Evaluating Baselines: A Study on Recommender Systems](#On_the_Difficulty_of_Evaluating_Baselines:_A_Study_on_Recommender_Systems), 2019
+- [Deep Learning based Recommender System:A Survey and New Perspectives](#Deep_Learning_based_Recommender_System:_A_Survey_and_New_Perspectives), 2017
+- [On the Difficulty of Evaluating Baselines:A Study on Recommender Systems](#On_the_Difficulty_of_Evaluating_Baselines:_A_Study_on_Recommender_Systems), 2019
 - [Deep Neural Networks for YouTube Recommendations](#Deep_Neural_Networks_for_YouTube_Recommendations), 2016
 - [Wide & Deep Learning for Recommender Systems](#Wide_&_Deep_Learning_for_Recommender_Systems), 2016
 - [Embedding-based News Recommendation for Millions of Users](#Embedding-based_News_Recommendation_for_Millions_of_Users), 2017
 - [Deep Learning Recommendation Model for Personalization and Recommendation Systems](#Deep_Learning_Recommendation_Model_for_Personalization_and_Recommendation_Systems), 2019
 - [Neural Collaborative Filtering](#Neural_Collaborative_Filtering), 2017
 - [Graph Convolutional Neural Networks for Web-Scale Recommender Systems](#Graph_Convolutional_Neural_Networks_for_Web-Scale_Recommender_Systems), 2018
-- [DRN: A Deep Reinforcement Learning Framework for News Recommendation](#DRN:_A_Deep_Reinforcement_Learning_Framework_for_News_Recommendation), 2018
+- [DRN:A Deep Reinforcement Learning Framework for News Recommendation](#DRN:_A_Deep_Reinforcement_Learning_Framework_for_News_Recommendation), 2018
 - [Top-K Off-Policy Correction for a REINFORCE Recommender System](#Top-K_Off-Policy_Correction_for_a_REINFORCE_Recommender_System), 2018
 
 
@@ -71,10 +71,10 @@ This is a series literature review of personalization and recommendation systems
 
 ## Deep Learning Related
 
-- **[Deep Learning based Recommender System: A Survey and New Perspectives](https://arxiv.org/pdf/1707.07435.pdf)** is a good systematic survey.
+- **[Deep Learning based Recommender System:A Survey and New Perspectives](https://arxiv.org/pdf/1707.07435.pdf)** is a good systematic survey.
 </br>
 
-- **[On the Difficulty of Evaluating Baselines: A Study on Recommender Systems](https://arxiv.org/pdf/1905.01395.pdf)** is a very interesting paper. Although the papers/methods it included have nothing to do with deep learning, it is worthwhile to have a summary over all those classic methods.
+- **[On the Difficulty of Evaluating Baselines:A Study on Recommender Systems](https://arxiv.org/pdf/1905.01395.pdf)** is a very interesting paper. Although the papers/methods it included have nothing to do with deep learning, it is worthwhile to have a summary over all those classic methods.
    - **[Bayesian MF](https://www.cs.toronto.edu/~amnih/papers/bpmf.pdf)**
    
    - **[SVD++](https://www.cs.rochester.edu/twiki/pub/Main/HarpSeminar/Factorization_Meets_the_Neighborhood-_a_Multifaceted_Collaborative_Filtering_Model.pdf)**
@@ -147,7 +147,7 @@ This is a series literature review of personalization and recommendation systems
    - Partial observation
    - Noisy reward
 
-- **[DRN: A Deep Reinforcement Learning Framework for News Recommendation](http://www.personal.psu.edu/~gjz5038/paper/www2018_reinforceRec/www2018_reinforceRec.pdf)**, 2018
+- **[DRN:A Deep Reinforcement Learning Framework for News Recommendation](http://www.personal.psu.edu/~gjz5038/paper/www2018_reinforceRec/www2018_reinforceRec.pdf)**, 2018
    - There are three challenges in news recommendation:
       - The dynamic change is difficult to handle, which is in two-fold: The news get outdated fast and the user interest might evolve over time
       - Current methods only consider immediate rewards like clicks/no-clicks. Long term ones like user return rate is not considered
