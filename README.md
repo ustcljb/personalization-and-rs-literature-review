@@ -1,27 +1,20 @@
 # personalization-and-rs-literature-review
 This is a series literature review of personalization and recommendation systems. Though there is no clear boundary between personalization and recommendation, it is commonly to recognize the search with query involved as personalization like search engine, e-commerce search, while to treat those without query as recommendation like news and videos recommendation.
 
-- [Personalization](#personalization)
- - [Embedding](#embedding)
-  - [Search Personalization with Embeddings](#Search_Personalization_with_Embeddings),2016
-  - [Personalized Ranking in eCommerce Search](#Personalized_Ranking_in_eCommerce_Search),2019
-  - [Real-time Personalization using Embeddings for Search Ranking at Airbnb](#Real-time_Personalization_using_Embeddings_for_Search_Ranking_at_Airbnb), 2018
- - [Collaborative Filtering](#Collaborative_Filtering)
-  - [Personalized Expertise Search at LinkedIn](#Personalized_Expertise_Search_at_LinkedIn), 2016
-  
-- [Recommendation](#Recommendation)
- - [Deep Learning Related](#Deep_Learning_Related)
-  - [Deep Learning based Recommender System: A Survey and New Perspectives](#Deep_Learning_based_Recommender_System:_A_Survey_and_New_Perspectives), 2017
-  - [On the Difficulty of Evaluating Baselines: A Study on Recommender Systems](#On_the_Difficulty_of_Evaluating_Baselines:_A_Study_on_Recommender_Systems), 2019
-  - [Deep Neural Networks for YouTube Recommendations](#Deep_Neural_Networks_for_YouTube_Recommendations), 2016
-  - [Wide & Deep Learning for Recommender Systems](#Wide_&_Deep_Learning_for_Recommender_Systems), 2016
-  - [Embedding-based News Recommendation for Millions of Users](#Embedding-based_News_Recommendation_for_Millions_of_Users), 2017
-  - [Deep Learning Recommendation Model for Personalization and Recommendation Systems](#Deep_Learning_Recommendation_Model_for_Personalization_and_Recommendation_Systems), 2019
-  - [Neural Collaborative Filtering](#Neural_Collaborative_Filtering), 2017
-  - [Graph Convolutional Neural Networks for Web-Scale Recommender Systems](#Graph_Convolutional_Neural_Networks_for_Web-Scale_Recommender_Systems), 2018
- - [Reinforcement Learning Related](#Reinforcement_Learning_Related)
-  - [DRN: A Deep Reinforcement Learning Framework for News Recommendation](#DRN:_A_Deep_Reinforcement_Learning_Framework_for_News_Recommendation), 2018
-  - [Top-K Off-Policy Correction for a REINFORCE Recommender System](#Top-K_Off-Policy_Correction_for_a_REINFORCE_Recommender_System), 2018
+- [Search Personalization with Embeddings](#Search_Personalization_with_Embeddings), 2016
+- [Personalized Ranking in eCommerce Search](#Personalized_Ranking_in_eCommerce_Search), 2019
+- [Real-time Personalization using Embeddings for Search Ranking at Airbnb](#Real-time_Personalization_using_Embeddings_for_Search_Ranking_at_Airbnb), 2018
+- [Personalized Expertise Search at LinkedIn](#Personalized_Expertise_Search_at_LinkedIn), 2016  
+- [Deep Learning based Recommender System: A Survey and New Perspectives](#Deep_Learning_based_Recommender_System:_A_Survey_and_New_Perspectives), 2017
+- [On the Difficulty of Evaluating Baselines: A Study on Recommender Systems](#On_the_Difficulty_of_Evaluating_Baselines:_A_Study_on_Recommender_Systems), 2019
+- [Deep Neural Networks for YouTube Recommendations](#Deep_Neural_Networks_for_YouTube_Recommendations), 2016
+- [Wide & Deep Learning for Recommender Systems](#Wide_&_Deep_Learning_for_Recommender_Systems), 2016
+- [Embedding-based News Recommendation for Millions of Users](#Embedding-based_News_Recommendation_for_Millions_of_Users), 2017
+- [Deep Learning Recommendation Model for Personalization and Recommendation Systems](#Deep_Learning_Recommendation_Model_for_Personalization_and_Recommendation_Systems), 2019
+- [Neural Collaborative Filtering](#Neural_Collaborative_Filtering), 2017
+- [Graph Convolutional Neural Networks for Web-Scale Recommender Systems](#Graph_Convolutional_Neural_Networks_for_Web-Scale_Recommender_Systems), 2018
+- [DRN: A Deep Reinforcement Learning Framework for News Recommendation](#DRN:_A_Deep_Reinforcement_Learning_Framework_for_News_Recommendation), 2018
+- [Top-K Off-Policy Correction for a REINFORCE Recommender System](#Top-K_Off-Policy_Correction_for_a_REINFORCE_Recommender_System), 2018
 
 
 # Personalization
