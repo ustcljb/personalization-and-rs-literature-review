@@ -18,7 +18,7 @@ This is a series literature review of personalization and recommendation systems
    * [Graph Convolutional Neural Networks for Web-Scale Recommender Systems](#Graph_Convolutional_Neural_Networks_for_Web-Scale_Recommender_Systems), 2018
    * [DRN: A Deep Reinforcement Learning Framework for News Recommendation](#DRN_A_Deep_Reinforcement_Learning_Framework_for_News_Recommendation), 2018
    * [Top-K Off-Policy Correction for a REINFORCE Recommender System](#Top-K_Off-Policy_Correction_for_a_REINFORCE_Recommender_System), 2018
-   * [MMGCN: Multi-modal Graph Convolution Network for Personalized Recommendation of Micro-video](#MMGCN:-Multi-modal-Graph-Convolution-Network-for-Personalized Recommendation-of-Micro-video), 2019
+   * [MMGCN: Multi-modal Graph Convolution Network for Personalized Recommendation of Micro-video](#MMGCN-Multi-modal-Graph-Convolution-Network-for-Personalized Recommendation-of-Micro-video), 2019
 
 
 # Personalization
@@ -154,11 +154,11 @@ This is a series literature review of personalization and recommendation systems
 
 - **[Top-K Off-Policy Correction for a REINFORCE Recommender System](https://arxiv.org/pdf/1812.02353.pdf)**, 2018
 
-</br>
 - **[MMGCN: Multi-modal Graph Convolution Network for Personalized Recommendation of Micro-video](http://staff.ustc.edu.cn/~hexn/papers/mm19-MMGCN.pdf)**, 2019
    - Existing works on multimedia recommendation largely exploit multi-modal contents to enrich item representations, while less effort is made to leverage information interchange between users and items to enhance user representations and further capture user’s fine-grained preferences on different modalities.
    - Model framework:
       - Instead of unifying multi-modal information,we treat each modality(visual, accoustic, textual) individually
       - Aggregation layer: utilizing the interaction data to enrich the representations of users and items
       - Combination layer: integrates the structural information h_m, the intrinsic information u_m, and the modality connection u_id into a unified representation
+      ![MMGCN](https://github.com/ustcljb/personalization-and-rs-literature-review/blob/master/images/MMGCN.png)
 
