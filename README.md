@@ -1,13 +1,14 @@
 # personalization-and-rs-literature-review
 This is a series literature review of personalization and recommendation systems. Though there is no clear boundary between personalization and recommendation, it is commonly to recognize the search with query involved as personalization like search engine, e-commerce search, while to treat those without query as recommendation like news and videos recommendation.
 
-- [Personalization](#Personalization)
+<!--ts-->
+* [Personalization](#Personalization)
    * [Search Personalization with Embeddings](#Search_Personalization_with_Embeddings), 2016
    * [Personalized Ranking in eCommerce Search](#Personalized_Ranking_in_eCommerce_Search), 2019
    * [Real-time Personalization using Embeddings for Search Ranking at Airbnb](#Real-time_Personalization_using_Embeddings_for_Search_Ranking_at_Airbnb), 2018
    * [Personalized Expertise Search at LinkedIn](#Personalized_Expertise_Search_at_LinkedIn), 2016  
    
-- [Recommendation](#Recommendation)
+* [Recommendation](#Recommendation)
    * [Deep Learning based Recommender System: A Survey and New Perspectives](#Deep_Learning_based_Recommender_System_A_Survey_and_New_Perspectives), 2017
    * [On the Difficulty of Evaluating Baselines: A Study on Recommender Systems](#On_the_Difficulty_of_Evaluating_Baselines_A_Study_on_Recommender_Systems), 2019
    * [Deep Neural Networks for YouTube Recommendations](#Deep_Neural_Networks_for_YouTube_Recommendations), 2016
@@ -19,11 +20,13 @@ This is a series literature review of personalization and recommendation systems
    * [DRN: A Deep Reinforcement Learning Framework for News Recommendation](#DRN_A_Deep_Reinforcement_Learning_Framework_for_News_Recommendation), 2018
    * [Top-K Off-Policy Correction for a REINFORCE Recommender System](#Top-K_Off-Policy_Correction_for_a_REINFORCE_Recommender_System), 2018
    * [MMGCN: Multi-modal Graph Convolution Network for Personalized Recommendation of Micro-video](#MMGCN_Multi_modal_Graph_Convolution_Network_for_Personalized_Recommendation_of_Micro_video), 2019
+<!--ts-->
 
+Personalization
+===============
 
-# Personalization
-
-- **[Search Personalization with Embeddings](https://arxiv.org/pdf/1612.03597.pdf)**, 2016 
+**[Search Personalization with Embeddings](https://arxiv.org/pdf/1612.03597.pdf)**, 2016 
+----------------------------------------------------------------------------------------
    - Previous search personalization highly depends on user profile (like human generated ontology), and this paper proposes a novel embedding method to track the user's topical interest.
    - Each user is represented by two matrices **W<sub>u,1</sub>** and **W<sub>u,2</sub>** to represent the relationship between user and query/document, and an additional vector *v<sub>u</sub>* to represent the user topical interests. On the other side, each query/document is represented by a vector *v<sub>q</sub>* and *v<sub>d</sub>* respectively which is pre-determined using the [LDA topic model](http://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf).
    - The goal is selecting a *scoring function* like <p align="center"><img src="https://render.githubusercontent.com/render/math?math=f(q, u, d) = ||W_{u,1}v_{q} %2B v_{u}  %2B W_{u,2}v_{d}||_{l_2}"></p> such that the value *f(q, u, d)* of relevant triple *(q, u, d)* is smaller than that of irrelevant triple *f(q', u, d')*. 
