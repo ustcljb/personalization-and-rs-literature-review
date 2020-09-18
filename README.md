@@ -18,7 +18,7 @@ This is a series literature review of personalization and recommendation systems
    * [Graph Convolutional Neural Networks for Web-Scale Recommender Systems](#Graph_Convolutional_Neural_Networks_for_Web-Scale_Recommender_Systems), 2018
    * [DRN: A Deep Reinforcement Learning Framework for News Recommendation](#DRN_A_Deep_Reinforcement_Learning_Framework_for_News_Recommendation), 2018
    * [Top-K Off-Policy Correction for a REINFORCE Recommender System](#Top-K_Off-Policy_Correction_for_a_REINFORCE_Recommender_System), 2018
-   * [MMGCN: Multi-modal Graph Convolution Network for Personalized Recommendation of Micro-video](#MMGCN-Multi-modal-Graph-Convolution-Network-for-Personalized Recommendation-of-Micro-video), 2019
+   * [MMGCN: Multi-modal Graph Convolution Network for Personalized Recommendation of Micro-video](#MMGCN_Multi_modal_Graph_Convolution_Network_for_Personalized_Recommendation_of_Micro_video), 2019
 
 
 # Personalization
