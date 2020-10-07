@@ -16,6 +16,7 @@ This is a series literature review of personalization and recommendation systems
    * [Embedding-based News Recommendation for Millions of Users](#Embedding-based_News_Recommendation_for_Millions_of_Users), 2017
    * [Deep Learning Recommendation Model for Personalization and Recommendation Systems](#Deep_Learning_Recommendation_Model_for_Personalization_and_Recommendation_Systems), 2019
    * [Neural Collaborative Filtering](#Neural_Collaborative_Filtering), 2017
+   * [Neural Interactive Collaborative Filtering](#Neural_Interactive_Collaborative_Filtering), 2020
    * [Graph Convolutional Neural Networks for Web-Scale Recommender Systems](#Graph_Convolutional_Neural_Networks_for_Web-Scale_Recommender_Systems), 2018
    * [DRN: A Deep Reinforcement Learning Framework for News Recommendation](#DRN_A_Deep_Reinforcement_Learning_Framework_for_News_Recommendation), 2018
    * [Top-K Off-Policy Correction for a REINFORCE Recommender System](#Top-K_Off-Policy_Correction_for_a_REINFORCE_Recommender_System), 2018
@@ -124,6 +125,20 @@ Personalization
    - GMF(generalized matrix factorization) and MLP(Nulti-layer Perceptron) and their fusion: GMF takes advantage of linearity of latent features and MLP controls non-linearity. GMF and MLP will be pre-trained (embedding on different space) and then the joint model will be trained
    ![Neural matrix factorization model](https://github.com/ustcljb/personalization-and-rs-literature-review/blob/master/images/Neural_matrix_factorization_model.png)
 </br>
+
+- **[Neural Interactive Collaborative Filtering](https://arxiv.org/pdf/2007.02095.pdf)**, 2020
+   - Novelty: Employing reinforment learning to solve cold-start and warm-start recommendation under NICF framework, where the exploration policy is represented as multi-channel stacked self-attention neural networks.
+   - Previous related strategy:
+      - Multi-Armed Bandit: The exploration technique is mainly based on probabilistic matrix factorization; The item selected for t-th iteration is mainly based on UCB or Thompson Sampling. It is difficult to update the posterior distribution for non-linear models, and the sophisticated methods like UCB and Thompson Sampling are usually overly pessimistic.
+      - Meta-learning: like Model-Agnostic Meta Learning, which can fastly capture users' interests based on a small support set. The performance is not good when constructing the user support items.
+   - Model Framework:
+      - Embedding layer for items
+      - Self-Attention layer for each rated group(items with the same rating)
+      - Point-wise feed forward
+      - Policy layer
+      - Policy learning via Q-learning
+      ![Neural Interactive Collaborative Filtering](https://github.com/ustcljb/personalization-and-rs-literature-review/blob/master/images/Neural_Interactive_Collaborative_Filtering.png)
+  </br>    
 
 - **[Graph Convolutional Neural Networks for Web-Scale Recommender Systems](https://arxiv.org/pdf/1806.01973.pdf)**, 2018
    - Novelty: The authors develop a data efficient Graph Convolutional Network (GCN) algorithm: PinSage, which combines efficient random walks and graph convolutions to generate embeddings of nodes (i.e., items) that incorporate both graph structure as well as node feature information.
