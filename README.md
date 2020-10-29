@@ -93,7 +93,7 @@ Personalization
       - 2. deep ranking model
       ![deep ranking model](https://github.com/ustcljb/personalization-and-rl-literature-review/blob/master/images/deep_ranking_network.png)
    - Engineering part:
-      This paper also mentioned how to serve the model better given certain industrial/engineering constraints. [Here](https://www.jiqizhixin.com/articles/2020-10-28-5) is a great summary. 
+      - This paper also mentioned how to serve the model better given certain industrial/engineering constraints. [Here](https://www.jiqizhixin.com/articles/2020-10-28-5) is a great summary. 
 </br>
 
 - **[Wide & Deep Learning for Recommender Systems](https://arxiv.org/pdf/1606.07792.pdf)**, 2016
